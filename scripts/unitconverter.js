@@ -55,6 +55,14 @@
     unitConverter.addUnit('g', 'pound', 453.59237);
     unitConverter.addUnit('g', 'lb', 453.59237);
 
+	// we use the SI metre unit as the base; this allows
+	// us to convert between SI and English units
+	unitConverter.addUnit('m', 'in', 0.0254);
+	unitConverter.addUnit('m', 'inch', 0.0254);
+	unitConverter.addUnit('m', 'ft', 0.3048);
+	unitConverter.addUnit('m', 'foot', 0.3048);
+	unitConverter.addUnit('m', 'yd', 0.9144);
+	unitConverter.addUnit('m', 'yard', 0.9144);
 
     window.$u = function (value, unit) {
         var u = new window.unitConverter(value, unit);
